@@ -1,0 +1,220 @@
+/* Fundo geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #f5f5f5;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e53935;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Navegação */
+nav {
+    background-color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e53935;
+}
+
+/* Área principal */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px 30px;
+}
+
+/* Cards de conteúdo */
+.card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.escuro {
+    background-color: #111;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #e53935;
+}
+
+/* Gatinhos-profissionais */
+.kitty-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.kitty-btn {
+    flex: 1 1 150px;
+    min-width: 120px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #333;
+    transition: 0.2s;
+}
+
+.kitty-btn:hover {
+    background-color: #2a2a2a;
+    border-color: #e53935;
+    transform: translateY(-2px);
+}
+
+.kitty-emoji {
+    font-size: 2rem;
+    display: block;
+}
+
+.kitty-nome {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Cards dos profissionais */
+.profissionais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card-profissional {
+    flex: 1 1 280px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+.card-profissional h3 {
+    margin-top: 0;
+    color: #ff7961;
+}
+
+/* Formulário de orçamento */
+.orcamento-form label {
+    display: block;
+    margin: 8px 0 4px;
+    font-weight: bold;
+}
+
+.orcamento-form input,
+.orcamento-form select,
+.orcamento-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #111;
+    color: #fff;
+}
+
+.orcamento-form button {
+    background-color: #e53935;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.orcamento-form button:hover {
+    background-color: #c62828;
+}
+
+#resultado-orcamento {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #1b1b1b;
+    border: 1px solid #444;
+    display: none;
+}
+
+/* Peças */
+.pecas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.peca {
+    flex: 1 1 250px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.peca img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.link-peca {
+    display: inline-block;
+    margin-top: 4px;
+    color: #ff7961;
+    text-decoration: none;
+}
+
+.link-peca:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+    color: #aaa;
+    border-top: 1px solid #333;
+}
+
+/* Responsivo */
+@media (max-width: 650px) {
+    nav {
+        font-size: 0.9em;
+    }
+
+    .kitty-btn {
+        flex: 1 1 45%;
+    }
+
+    .peca {
+        flex: 1 1 100%;
+    }
+}
